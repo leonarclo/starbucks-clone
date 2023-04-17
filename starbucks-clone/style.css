@@ -111,7 +111,6 @@ img {
 
 .content {
   max-width: 144rem;
-  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -126,7 +125,6 @@ img {
   display: flex;
   align-items: center;
   justify-items: center;
-  width: 500%;
 }
 
 .image .first {
@@ -137,7 +135,7 @@ img {
 .navigation-arrows {
   display: flex;
 }
-.navigation-arrows div {
+.navigation-arrows button {
   background-color: white;
   border-radius: 50%;
   font-size: 1.5rem;
@@ -153,7 +151,7 @@ img {
   box-shadow: 0 0 6px rgb(0 0 0 / 24%), 0 8px 12px rgb(0 0 0 / 14%);
 }
 
-.navigation-arrows div:hover {
+.navigation-arrows button:hover {
   background: rgba(240, 240, 240, 1);
   transition: 0.2s ease all;
   transform: translate(5%, 5%);
@@ -214,23 +212,19 @@ img {
   transition: 0.2s;
 }
 
-#radio1:checked ~ .images .first {
-  margin-left: 0;
+#radio1:checked ~ .images .show {
   transition: 0.3s;
 }
 
-#radio2:checked ~ .images .first {
-  margin-left: -20%;
+#radio2:checked ~ .images .show {
   transition: 0.3s;
 }
 
-#radio3:checked ~ .images .first {
-  margin-left: -40%;
+#radio3:checked ~ .images .show {
   transition: 0.3s;
 }
 
-#radio4:checked ~ .images .first {
-  margin-left: -60%;
+#radio4:checked ~ .images .show {
   transition: 0.3s;
 }
 
@@ -245,4 +239,12 @@ img {
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.images .image {
+  display: none;
+}
+
+.images .show {
+  display: block;
 }
