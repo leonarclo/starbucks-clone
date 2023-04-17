@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Starbucks Clone</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo-nav">
+            <a href="home">
+              <img
+                src="assets/img/starbucks-nav-logo.svg"
+                alt="Logo da Starbucks"
+              />
+            </a>
+          </div>
+          <ul class="nav-left-list">
+            <li>
+              <a href="menu">Menu</a>
+            </li>
+            <li>
+              <a href="rewards">Rewards</a>
+            </li>
+            <li>
+              <a href="nosso-cafe">Nosso Café</a>
+            </li>
+            <li>
+              <a href="-impacto-social">Impacto Social</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="historias">
+            <a href="historias">
+              <img
+                src="assets/img/sb-historias-logo.svg"
+                alt="Histórias Starbucks"
+              />
+            </a>
+          </div>
+          <a href="lojas">
+            <div class="lojas">
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+              <span>Encontre uma loja</span>
+            </div>
+          </a>
+          <button class="btn btn-white">Entrar</button>
+          <button class="btn btn-black">Participe agora</button>
+        </div>
+      </div>
+    </nav>
+    <main class="content">
+      <!-- slider -->
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-buttons" id="radio1" checked />
+          <input type="radio" name="radio-buttons" id="radio2" />
+          <input type="radio" name="radio-buttons" id="radio3" />
+          <input type="radio" name="radio-buttons" id="radio4" />
+          <ul class="images">
+            <li class="image first">
+              <a href="">
+                <img src="assets/img/banner_1238876046_desktop.jpg" />
+              </a>
+            </li>
+            <li class="image">
+              <a href="">
+                <img src="assets/img/banner_195590685_desktop.jpg" />
+              </a>
+            </li>
+            <li class="image">
+              <a href="">
+                <img src="assets/img/banner_2076255843_desktop.jpg" />
+              </a>
+            </li>
+            <li class="image">
+              <a href="">
+                <img src="assets/img/banner_2185667301_desktop.jpg" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="navigation-arrows">
+            <div class="prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="navigation-auto">
+            <div class="auto auto-btn1"></div>
+            <div class="auto auto-btn2"></div>
+            <div class="auto auto-btn3"></div>
+            <div class="auto auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn nav1"></label>
+          <label for="radio2" class="manual-btn nav2"></label>
+          <label for="radio3" class="manual-btn nav3"></label>
+          <label for="radio4" class="manual-btn nav4"></label>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
